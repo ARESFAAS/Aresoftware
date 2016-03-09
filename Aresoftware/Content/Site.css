@@ -1,0 +1,55 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size:large;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.contact-error {
+    list-style: none;
+    color: yellow;
+    font-size: medium;
+}
+.contact-container {
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#divSocialFacebook, #divSocialTwitter, #divSocialGoogle {
+    height: 60px;
+    width: 60px;
+    background-image: url('images/iconos-sociales.png');
+    background-repeat: no-repeat;
+    clear:right;
+    float:left;
+    margin-top:0.5em;
+}
+
+#divSocialGoogle {
+  background-position: -114px -60px;
+}
+#divSocialFacebook {
+  background-position: -55px -60px;
+}
+#divSocialTwitter {
+  background-position: 0px -60px;
+}
