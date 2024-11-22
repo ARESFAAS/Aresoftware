@@ -1,38 +1,21 @@
 ﻿@{
     ViewBag.Title = "Contáctenos";
 }
-@Scripts.Render("~/bundles/jqueryval")
-@Scripts.Render("~/bundles/contact")
 
 <h2 style="text-align:center;">@ViewBag.Title</h2>
 <address>
-    Calle 27 Bis Sur 12K 64<br />
+    Calle 78B # 116B - 50 T4 1103<br />
     Bogotá, Colombia<br />
+    Código Postal: 111031<br />
     <abbr title="Phone">P:</abbr>
-    320 4051371
+    +57 320 4051371
+    <abbr title="WhatsApp">
+        <a href="https://wa.me/573204051371?text=Hola%20me%20interesa%20tu%20producto" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px;">
+        </a>
+    </abbr>
 </address>
 <address>
     <strong>Administración</strong>   <a href="mailto:administrative@aresoftware.net">administrative@aresoftware.net</a><br />
     <strong>Ventas</strong> <a href="mailto:administrative@aresoftware.net">administrative@aresoftware.net</a>
 </address>
-<br />
-<div class="contact-container">
-    <form id="frmContact">
-        <div id="divSummaryErrors"><ul class="contact-error"></ul></div>
-        <div style="padding:0.2em 0.2em 0.2em 0.2em;margin:0.2em 0.2em 0.2em 0.2em;border:0.2em inset">
-            <div style="text-align:center;"><label>Envíanos un mensaje con este formulario de contacto</label></div>
-            <br />
-            <div><label style="text-align:left;width:6em;">Nombre:</label><input id="name" name="name" type="text" /></div>
-            <div><label style="text-align:left;width:6em;">E-mail:</label><input id="email" name="email" type="email" /></div>
-            <div><label style="text-align:left;width:6em;">Mensaje:</label><textarea id="message" name="message" cols="40" rows="5"></textarea></div>
-            <br />
-            <div id="divCapcha" style="padding:0.2em 0.2em 0.2em 0.2em;margin:0.2em 0.2em 0.2em 0.2em;border:0.2em inset">
-                <label>Desliza la barra hasta obtener el valor o ingresa el valor:</label><label id="lblValorAleatorio" style="padding-left:0.2em;"></label>
-                <div id="slider" style="margin-bottom:0.3em;"></div>
-                <label for="amount">Valor:</label><input type="number" id="amount" style="border:0; color:#f6931f; font-weight:bold;width:2em;text-align:left;">
-            </div>
-            <br />
-            <div><p style="text-align:center;"><input id="btnEnviar" class="btn btn-primary" href="" type="submit" value="Enviar" /></p></div>
-        </div>
-    </form>
-</div>

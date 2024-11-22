@@ -34,22 +34,22 @@ textarea {
     margin-right:15%;
 }
 
-#divSocialFacebook, #divSocialTwitter, #divSocialGoogle {
-    height: 60px;
-    width: 60px;
-    background-image: url('images/iconos-sociales.png');
+#divSocialFacebook, #divSocialWhatsApp, #divSocialTwitter {
+    height: 62px;
+    width: 68px;
+    background-image: url('images/socialmendiaicons1.png');
     background-repeat: no-repeat;
-    clear:right;
-    float:left;
-    margin-top:0.5em;
+    clear: right;
+    float: left;
+    margin-top: 0.5em;
 }
 
-#divSocialGoogle {
-  background-position: -114px -60px;
-}
 #divSocialFacebook {
-  background-position: -55px -60px;
+    background-position: -71px -11px;
 }
 #divSocialTwitter {
-  background-position: 0px -60px;
+    background-position: -204px -11px;
+}
+#divSocialWhatsApp {
+    background-position: -272px -11px;
 }

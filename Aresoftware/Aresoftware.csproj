@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\iconos-sociales.png" />
+    <Content Include="Content\images\socialmendiaicons1.png" />
     <Content Include="Content\images\ui-bg_glass_75_d0e5f5_1x400.png" />
     <Content Include="Content\images\ui-bg_glass_85_dfeffc_1x400.png" />
     <Content Include="Content\images\ui-bg_glass_95_fef1ec_1x400.png" />
@@ -153,6 +154,7 @@
     <Content Include="Content\img\inge_siste-2014_11_11_174501.jpg" />
     <Content Include="Content\img\ios_android_windows_phone.jpg" />
     <Content Include="Content\img\LogoAresoftware2.png" />
+    <Content Include="Content\img\ScreenShot5.png" />
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\jquery-ui.structure.min.css" />
     <Content Include="Content\jquery-ui.theme.min.css" />
