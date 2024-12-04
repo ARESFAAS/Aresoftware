@@ -1,21 +1,94 @@
 ﻿@{
     ViewBag.Title = "Portafolio de Servicios";
 }
+<style>
+    .carousel-inner .item img {
+        margin: auto; /* Centra horizontalmente */
+        max-width: 100%; /* Ajusta el tamaño al contenedor */
+        max-height: 100%; /* Evita desbordar el contenedor */
+    }
+    .carousel-inner .item {
+        align-items: center; /* Centra verticalmente */
+    }
+    .carousel-control .glyphicon {
+        color: black; /* Cambia el color del glyphicon de los controles */
+    }
+    .carousel-indicators li {
+        background-color: gray; /* Cambia el color de los indicadores inactivos */
+    }
+    .carousel-indicators .active {
+        background-color: black; /* Cambia el color del indicador activo */
+    }
+     #idComprar {
+        color: white;
+        background-color: #28a745; /* Color verde */
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        animation: pulse 2s infinite; /* Agregar animación */
+    }
+    #idComprar:hover {
+        background-color: #218838; /* Cambiar el color al pasar el mouse */
+    }
+</style>
 <h2 style="text-align:center;">@ViewBag.Title</h2>
 <h3>INVENTARIOS Y FACTURACIÓN</h3>
 <p>
-    Software POS standalone para Windows 10 y 11 de 64 bit. 
+    Software POS standalone y multipropósito para Windows 10 y 11 de 64 bit. 
     Intuitivo y fácil de usar. Instale y use. No necesita conexión a internet para su funcionamiento.
     Lleve el control de su inventario y genere facturas o tickets de venta de forma ágil y eficiente. 
     La información de sus clientes permanece en su computadora de forma segura pues no usa servicios de nube.    
 </p>
 <br />
-<div style="text-align:center;">
-    <img src="~/Content/img/ScreenShot5.png" style="width:50%;"  />
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>        
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="text-align:center;">
+        <div class="item active">
+            <img src="~/Content/img/ScreenShot1.png" alt="" style="width:50%;">
+        </div>
+        <div class="item">
+            <img src="~/Content/img/ScreenShot2.png" alt="" style="width:50%;">
+        </div>
+        <div class="item">
+            <img src="~/Content/img/ScreenShot3.png" alt="" style="width:50%;">
+        </div>
+        <div class="item">
+            <img src="~/Content/img/ScreenShot4.png" alt="" style="width:50%;">
+        </div>
+        <div class="item">
+            <img src="~/Content/img/ScreenShot5.png" alt="" style="width:50%;">
+        </div>
+        <div class="item">
+            <img src="~/Content/img/ScreenShot6.png" alt="" style="width:50%;">
+        </div>
+        <div class="item">
+            <img src="~/Content/img/ScreenShot7.png" alt="" style="width:50%;">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 </div>
 <br />
 <div style="text-align:center;">
-    <a class="btn btn-link" id="idComprar" onclick="alert('Tienda');">Comprar</a>
+    <a class="btn btn-link" id="idComprar" onclick="alert('Tienda');">Lo quiero!!!</a>
 </div>
 <h3>WEB</h3>
 <p>

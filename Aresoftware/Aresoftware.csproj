@@ -154,7 +154,13 @@
     <Content Include="Content\img\inge_siste-2014_11_11_174501.jpg" />
     <Content Include="Content\img\ios_android_windows_phone.jpg" />
     <Content Include="Content\img\LogoAresoftware2.png" />
+    <Content Include="Content\img\ScreenShot1.png" />
+    <Content Include="Content\img\ScreenShot2.png" />
+    <Content Include="Content\img\ScreenShot3.png" />
+    <Content Include="Content\img\ScreenShot4.png" />
     <Content Include="Content\img\ScreenShot5.png" />
+    <Content Include="Content\img\ScreenShot6.png" />
+    <Content Include="Content\img\ScreenShot7.png" />
     <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\jquery-ui.structure.min.css" />
     <Content Include="Content\jquery-ui.theme.min.css" />
