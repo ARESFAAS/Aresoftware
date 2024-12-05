@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Generar Clave de Activación";
+}
+
+<h2>Generar Clave de Activación</h2>
+
+<button id="generateKeyButton" class="btn btn-primary">Generar Clave</button>
+
+<div id="activationKeyContainer" style="margin-top: 20px;">
+    <!-- Aquí se mostrará el JSON con la clave generada -->
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#generateKeyButton').click(function () {
+                // Hacer una solicitud AJAX al servidor para generar la clave de activación
+                $.ajax({
+                    url: '@Url.Action("GetActivationKey", "Activation")',
+                    type: 'POST',
+                    success: function (response) {
+                        if (response.Success) 
+                        {
+                            // Mostrar la clave generada en el contenedor
+                            $('#activationKeyContainer').html('<strong>Clave Generada:</strong> ' + response.ActivationKey);
+                        } 
+                        else 
+                        {
+                            $('#activationKeyContainer').html('<strong>Error al generar la clave.</strong>');
+                        }
+                    },
+                    error: function () {
+                        $('#activationKeyContainer').html('<strong>Error al hacer la solicitud.</strong>');
+                    }
+                });
+            });
+        });
+    </script>
+}
