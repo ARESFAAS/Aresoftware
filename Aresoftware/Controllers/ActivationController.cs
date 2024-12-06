@@ -30,7 +30,7 @@ namespace Aresoftware.Controllers
         public ActionResult Login(LoginModel model)
         {
             // Aquí verificarías las credenciales de la base de datos o de algún otro medio
-            if (model.Username == "xxxx" && model.Password == "xxxx") // Verifica con tus credenciales reales
+            if (model.Username == "xxxxxx" && model.Password == "xxxx") // Verifica con tus credenciales reales
             {
                 // Guardamos al usuario en la sesión para mantenerlo logueado
                 Session["User"] = model.Username;
