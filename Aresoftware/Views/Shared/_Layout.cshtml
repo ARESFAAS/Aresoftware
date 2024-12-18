@@ -39,7 +39,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer style="text-align:center;">
+        <footer style="text-align: center; background-color: #485563; ">            
+            <div><a href="@Url.Action("Privacy","Home")" target="_blank">Política de Privacidad</a></div>
             <p>&copy; @DateTime.Now.Year - AreSoftware - Bogotá, Colombia</p>
         </footer>
     </div>

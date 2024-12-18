@@ -203,6 +203,7 @@
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Activation\Login.cshtml" />
     <Content Include="Views\Activation\GenerateActivationKey.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

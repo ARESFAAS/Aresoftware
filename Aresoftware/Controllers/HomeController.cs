@@ -30,6 +30,11 @@ namespace Aresoftware.Controllers
             return View();
         }
 
+        public ActionResult Privacy()
+        {
+            return View();
+        }
+
         public void SendMailBase(string body, string subject, string to)
         {
             var message = new MailMessage();
